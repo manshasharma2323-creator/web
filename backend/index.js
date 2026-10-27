@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}));
 app.use(express.json);
 
 const logger = (req,res,next) => {
-  console.log(`you access method : ${req.method} URL:${req.url} at ${new Date()}`);
+  console.log(`you access method : ${req.method} URL:$ {req.url} at ${new Date().toIS}`);
   next();
 }
 app.use(logger);
